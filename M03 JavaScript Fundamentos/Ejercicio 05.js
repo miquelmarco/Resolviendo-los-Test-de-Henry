@@ -40,17 +40,24 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
    // Retornar el área de un rectángulo teniendo su altura y ancho.
    // Tu código:
+   var area = (alto * ancho);
+   return area;
 }
 
 function retornarPerimetro(lado) {
    // La función recibe como argumento la medida de un lado de un rectángulo.
+   // NOTA DEL ESTUDIANTE: ASUMO QUE SE REFIEREN A UN CUADRADO Y NO RECTANGULO.
    // Debes retornar su perímetro.
    // Tu código:
+   var perimetro = (lado * 4);
+   return perimetro;
 }
 
 function areaDelTriangulo(base, altura) {
    // Calcula el área de un triángulo y retorna el resultado.
    // Tu código:
+   var area = ((base * altura) / 2);
+   return area;
 }
 
 function deEuroAdolar(euro) {

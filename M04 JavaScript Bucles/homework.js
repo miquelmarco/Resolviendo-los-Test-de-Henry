@@ -45,9 +45,9 @@ function saludo(idioma) {
    // Si "idioma" es "ingles", devuelve "Hello!".
    // Si "idioma" no es ninguno de los anteriores o es `undefined` devuelve "Hola!".
    // Tu código:
-   if (idioma === 'aleman') {
+   if (idioma === 'aleman'){
       return 'Guten Tag!';
-   } if (idioma === 'mandarin') {
+   } if (idioma === 'mandarin'){
       return 'Ni Hao!';
    } if (idioma === 'ingles'){
       return 'Hello!';
@@ -124,6 +124,13 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 5, retorna "buzz".
    // De lo contrario, retorna el número.
    // Tu código:
+   if(num % 3 === 0 && num % 5 === 0){
+      return 'fizzbuzz';
+   } else if (num % 3 === 0) {
+      return 'fizz';
+   } else if (num % 5 === 0){
+      return 'buzz';
+   } else return (num);
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -173,7 +180,7 @@ function tieneTresDigitos(num) {
    // Si el número recibido tiene tres dígitos retornar True.
    // Caso contrario, retornar False.
    // Tu código:
-   if (num.length === 3){
+   if (num > 99 && num < 1000){
       return true;
    } else return false;
 }
@@ -183,6 +190,13 @@ function doWhile(num) {
    // Retornar el valor final.
    // Utilizar el bucle Do-While.
    // Tu código:
+   var aumentos = 8;
+   var result = 0;
+   do {
+      result = result + 5;
+      aumentos = aumentos - 1;
+   } while (aumentos !== 0);
+   return num + result;
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
